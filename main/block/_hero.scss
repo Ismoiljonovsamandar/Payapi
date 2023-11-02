@@ -1,0 +1,127 @@
+.hero__bg {
+  background-repeat: no-repeat;
+  background-image: url("../img/hero__backgrounf_img.svg");
+  background-position: right top;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__content {
+  max-width: 550px;
+  padding-bottom: 50px;
+}
+
+.hero__title {
+  @include title;
+  margin-bottom: 29px;
+}
+
+.hero__input_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 445px;
+  border-radius: 24px;
+  background-color: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.hero__input {
+  padding-top: 16px;
+  padding-bottom: 14px;
+  margin-left: 27px;
+  outline: none;
+  border: none;
+  color: #36536b;
+  font-size: 15px;
+  font-weight: 700;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+.hero__btn {
+  color: #fbfcfe;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.115px;
+  border-radius: 24px;
+  background-color: #ba4270;
+  padding: 16px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__form {
+  margin-bottom: 16px;
+}
+
+.hero__text {
+  color: #6c8294;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.hero__text_span {
+  color: #6c8294;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.hero__img {
+  max-width: 400px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1070px) {
+  .hero__bg {
+    background-image: url("../../img/hero__bg2.svg");
+    background-position: center top;
+  }
+  .hero__container {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .hero__title {
+    max-width: 573px;
+    font-size: 48px;
+  }
+
+  .hero__form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__title {
+    font-size: 32px;
+  }
+
+  .hero__input_block {
+    max-width: 372px;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .hero__input {
+    width: 100%;
+    margin: 0;
+    border-radius: 24px;
+    padding-left: 27px;
+    background-color: #fbfcfe;
+    margin-bottom: 16px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
+
+  .hero__btn {
+    width: 100%;
+  }
+}
